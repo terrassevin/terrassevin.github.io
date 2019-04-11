@@ -1,0 +1,28 @@
+---
+layout: page
+title: Om os
+---
+<section class="bg-primary" id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 text-center">
+				<h2 class="section-heading">Hvem er vi?</h2>
+				<hr class="light">
+				<div class="row">
+					{% for person in site.people %}
+					<div class="col-lg-4 text-center">
+						{% if person.image_path %}
+						<img src="{{person.image_path}}" alt="" class="img-responsive"></img>
+						{% endif %}
+					<h3>{{ person.name }}</h3>
+					<p class="text-faded">{{ person.profession }}</p>
+					<p class="text-faded">{{ person.description }}</p>
+					</div>
+					{% endfor %}
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
