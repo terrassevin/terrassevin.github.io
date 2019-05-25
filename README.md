@@ -1,7 +1,7 @@
-# The site of terrassevin.dk
+# Terrassevin
 
-## Technologies.
+Based on https://github.com/siawyoung/immaculate
 
-* Files marked with `.md` is made in Markdown: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-* Site uses Bootstrap for layout: http://getbootstrap.com/ tutorial: https://www.w3schools.com/bootstrap/default.asp
-* And served through Jekyll: https://jekyllrb.com/
+## License
+
+MIT

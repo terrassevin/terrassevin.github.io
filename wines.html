@@ -1,33 +1,17 @@
 ---
-layout: page
+layout: default
 title: Vine
+permalink: /wines/
 ---
-<section class="no-padding" id="portfolio">
-	<div class="container-fluid">
-		<br>
-		<div class="row no-gutter">
-			{% for wine_item in site.wines %}
-				<div class="col-lg-4 col-sm-6 col-sm-offset-1">
-					<a href="{{ wine_item.link }}" class="portfolio-box">
-						<div class="portfolio-box-imgbox">
-						<img src="{{ wine_item.image_path }}" class="img-rep img-responsive" alt="">
-						</div>
-						<div class="portfolio-box-caption">
-							<div class="portfolio-box-caption-content">
-								<div class="project-category text-faded">
-									{{ wine_item.category }}
-								</div>
-								<div class="project-name">
-									{{ wine_item.project_name }}
-								</div>
-							</div>
-						</div>
-						<div class="portfolio-box-description">
-									{{ wine_item.project_description }}
-						</div>
-					</a>
-				</div>
-			{% endfor %}
-		</div>
-	</div>
-</section>
+
+<h1> Producenter </h1>
+
+<div>
+    {% for winery in site.wineries %}
+        <p>
+            <a href="{{ winery.url }}">  
+                {{ winery.name }}
+            </a>
+        </p>
+    {% endfor %}
+</div>
