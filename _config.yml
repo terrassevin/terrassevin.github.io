@@ -2,7 +2,7 @@ title: Terrassevin
 description: >
   Garageimportør med speciale i lavinterventionsvine fra Østeuropa og andre utraditionelle vinområder.
 baseurl: ""
-url: "https://github.com/siawyoung/immaculate"
+url: "https://terrassevin.dk"
 paginate:	2 # The number of posts to show per page on your homepage
 paginate_path: "/blog/page:num/"
 markdown: kramdown
@@ -15,3 +15,4 @@ collections:
   wineries:
     output: true
   people:
+logo: "/assets/images/logo.csv"
